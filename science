@@ -1,0 +1,777 @@
+Below is an exhaustive, formula‑by‑formula exposition of the entire Science Creator compendium (sciencecreator.asia).
+
+---
+
+Algebra & Number Systems
+
+Quadratic Formula
+
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+
+This is the universal solution to the general quadratic equation ax^2+bx+c=0 ( a\neq 0 ). The term under the square‑root, \Delta = b^2-4ac, is called the discriminant. Three cases arise:
+
+· \Delta > 0: two distinct real roots.
+· \Delta = 0: exactly one real root (a repeated root, sometimes called a “double root”).
+· \Delta < 0: two complex‑conjugate roots.
+
+Historically, the Indian mathematician Brahmagupta (628 CE) stated the first explicit (though not yet fully general) solution that included negative numbers. Al‑Khwarizmi (c. 820 CE) later classified six types of quadratics (his work lacked negative numbers and zero) and gave systematic methods for solving them. The modern symbolic formula coalesced during the Islamic Golden Age.
+
+Binomial Theorem
+
+(x+y)^n = \sum_{k=0}^n \binom{n}{k}x^{n-k}y^k ,\qquad
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+
+The binomial coefficient \binom{n}{k} counts the number of ways to choose k unordered elements from a set of n elements. Early combinatorial knowledge appears in Pingala’s Chandaḥśāstra (c. 200 BCE), which contains a method for computing binomial coefficients. Isaac Newton (1665) generalized the theorem to real exponents, writing the expansion as an infinite series.
+
+Euler’s Identity
+
+e^{i\pi} + 1 = 0
+
+Often called “the most beautiful formula in mathematics,” it unites five fundamental constants: e (the base of natural logarithms), i (the imaginary unit), \pi (the circle constant), 1, and 0. It is the special case \theta=\pi of Euler’s formula e^{i\theta}=\cos\theta+i\sin\theta. The identity is central to complex analysis, AC circuit theory (Steinmetz phasors), Fourier transforms, and quantum‑mechanical plane‑wave formalisms.
+
+Euler’s Formula (Complex Exponential)
+
+e^{i\theta} = \cos\theta + i\sin\theta
+
+This bridge between exponential and trigonometric functions was published by Euler in 1748. It enables the representation of sinusoidal signals as complex exponentials, which drastically simplifies the analysis of AC circuits, Fourier transforms, and quantum‑mechanical wavefunctions.
+
+Logarithm Product Rule
+
+\log_b(xy) = \log_b x + \log_b y
+
+The logarithm converts multiplication into addition. John Napier published the first table of logarithms in 1614, a breakthrough that Laplace praised as “doubling the life of the astronomer.” The natural logarithm can be defined as an integral: \ln x = \int_1^x dt/t.
+
+Sums of Powers
+
+\sum_{k=1}^n k = \frac{n(n+1)}{2},\qquad
+\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}
+
+The first formula is associated with a story about Gauss (age 7) who instantly summed the integers from 1 to 100. Archimedes derived the formula for \sum k^2. Jakob Bernoulli (1713) discovered the general power‑sum formula using what are now called Bernoulli numbers, which appear throughout number theory and analysis.
+
+Arithmetic and Geometric Series
+
+S_n = \frac{n}{2}(a_1+a_n),\qquad
+S_\infty = \frac{a}{1-r}\quad (|r|<1)
+
+The arithmetic series formula gives the sum of n equally spaced terms. The geometric series converges to a finite limit when the common ratio satisfies |r|<1. Euclid studied geometric progressions, and Archimedes used infinite geometric series to resolve Zeno’s dichotomy paradox ( \sum_{k=1}^\infty d/2^k = d ).
+
+AM–GM Inequality
+
+\frac{a_1+\cdots+a_n}{n} \ge \sqrt[n]{a_1\cdots a_n} \ge \frac{n}{\sum 1/a_i}
+
+The arithmetic mean is always at least the geometric mean, which in turn is at least the harmonic mean. Equality holds iff all a_i are equal. Cauchy (1821) proved the general version via forward‑backward induction. The inequality is foundational to the maximum‑entropy principle, geometric programming, and isoperimetric inequalities.
+
+Cauchy–Schwarz Inequality
+
+\left(\sum a_i b_i\right)^2 \le \left(\sum a_i^2\right)\!\left(\sum b_i^2\right)
+
+In an inner‑product space: |\langle u,v\rangle| \le \|u\|\cdot\|v\|. Cauchy gave the sum form (1821); Schwarz extended it to integrals (1885). It implies the Heisenberg uncertainty principle and the bound |\rho|\le 1 for correlation coefficients.
+
+Cubic Equation (Cardano’s Formula)
+
+x^3+px+q=0,\qquad
+x = \sqrt[3]{-\frac{q}{2}+\sqrt{\Delta}} + \sqrt[3]{-\frac{q}{2}-\sqrt{\Delta}},\quad
+\Delta = \frac{q^2}{4} + \frac{p^3}{27}
+
+del Ferro first solved the depressed cubic around 1515; Tartaglia rediscovered it in 1535, and Cardano published it in the Ars Magna (1545), breaking a sacred oath. When \Delta<0 (the casus irreducibilis), the formula yields real roots that appear in complex form—a puzzle that spurred the acceptance of complex numbers.
+
+Viète’s Formulas (General Polynomial)
+
+\sum z_i = -\frac{a_{n-1}}{a_n},\qquad
+\prod z_i = (-1)^n\frac{a_0}{a_n}
+
+François Viète (1591) discovered that symmetric functions of the roots can be expressed in terms of the coefficients. These relations are intimately tied to Gauss’s Fundamental Theorem of Algebra (PhD dissertation, 1799): every non‑constant polynomial with complex coefficients has at least one complex root.
+
+Multinomial Theorem
+
+(x_1+\cdots+x_m)^n = \sum_{k_1+\cdots+k_m=n} \frac{n!}{k_1!\cdots k_m!} x_1^{k_1}\cdots x_m^{k_m}
+
+Leibniz (1676) formulated this generalization of the binomial theorem. The multinomial coefficient counts the number of ways of partitioning n distinct items into m groups of sizes k_1,\dots,k_m. It is essential in statistical mechanics for counting microstates and underlies the multinomial distribution.
+
+Complex Conjugate Properties
+
+\overline{z_1+z_2}=\overline{z_1}+\overline{z_2},\qquad
+\overline{z_1 z_2}=\overline{z_1}\cdot\overline{z_2}
+
+Conjugation distributes over addition and multiplication. The modulus |z|=\sqrt{z\overline{z}} gives the Euclidean distance from the origin in the complex plane. Real polynomials have real coefficients precisely when complex roots appear in conjugate pairs.
+
+De Moivre’s Theorem
+
+(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)
+
+Published by Abraham de Moivre in 1707, the theorem allows one to derive multiple‑angle identities from the binomial expansion of the right‑hand side. It is a direct consequence of Euler’s formula: (e^{i\theta})^n = e^{in\theta}.
+
+Roots of Unity
+
+\zeta_n^k = e^{2\pi i k/n},\qquad
+\prod_{k=1}^{n-1}(1-\zeta_n^k)=n
+
+The n‑th roots of unity form a cyclic group of order n under multiplication. Their sum is zero: \sum_{k=0}^{n-1}\zeta_n^k=0. They are the “twiddle factors” in the Fast Fourier Transform and underlie the factorization of cyclotomic polynomials.
+
+Polynomial Remainder & Factor Theorem
+
+P(x)=Q(x)(x-a)+P(a),\qquad
+P(a)=0 \iff (x-a)\mid P(x)
+
+The Remainder Theorem: evaluating a polynomial P(x) at x=a yields the remainder upon division by (x-a). The Factor Theorem: a is a root if and only if (x-a) is a factor. These are the basis of synthetic division (Horner’s method).
+
+Vieta for Cubic
+
+x^3+px^2+qx+r=0,\quad \sum r_i = -p,\quad \sum_{i<j} r_i r_j = q,\quad r_1 r_2 r_3 = -r
+
+A specialization of Viète’s formulas to the cubic degree: the sum of roots equals -p; the sum of pair‑wise products equals q; the product equals -r.
+
+Rational Root Test
+
+\frac{p}{q} \text{ is a root of } a_n x^n+\cdots+a_0 \;\Longrightarrow\; p\mid a_0,\; q\mid a_n
+
+Any rational root of an integer‑coefficient polynomial has its numerator dividing the constant term and its denominator dividing the leading coefficient. This drastically reduces the search for rational roots.
+
+Descartes’ Rule of Signs
+
+\#\text{ positive real roots} \le \#\text{ sign changes in coefficients}
+
+The actual number of positive real roots differs from the bound by an even integer. Applying the rule to P(-x) bounds the number of negative roots.
+
+Partial Fractions
+
+\frac{P(x)}{\prod (x-r_i)^{e_i}} = \sum_i \sum_{j=1}^{e_i} \frac{A_{ij}}{(x-r_i)^j}
+
+Every rational function can be decomposed into a sum of simpler fractions with denominators that are powers of linear (or irreducible quadratic) factors. The decomposition is essential for integrating rational functions and for computing inverse Laplace transforms in control theory.
+
+Arithmetic Mean
+
+\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
+
+Among all possible constants c, the arithmetic mean minimizes the sum of squared deviations: \sum (x_i-c)^2. This is a consequence of Gauss’s least‑squares principle.
+
+Finite Geometric Series
+
+\sum_{k=0}^{n-1} ar^k = a\frac{1-r^n}{1-r},\qquad r\neq 1
+
+When |r|<1, letting n\to\infty yields the infinite geometric series \sum_{0}^\infty ar^k = a/(1-r). The formula appears in Z‑transforms, mortgage calculations, and everywhere else that geometric growth is discounted.
+
+Telescoping Series
+
+\sum_{k=1}^n (a_k - a_{k+1}) = a_1 - a_{n+1}
+
+Intermediate terms cancel in successive pairs. Many series can be recast as telescoping sums via partial fractions—for example, \sum 1/(k(k+1)) = 1.
+
+Absolute Value
+
+|x| = \begin{cases} x & x\ge 0 \\ -x & x<0 \end{cases},\qquad
+|x+y|\le |x|+|y|
+
+The absolute value is a norm on \mathbb{R}; the triangle inequality is its defining property. It generalizes to the metric |x-a| measuring distance between real numbers.
+
+Floor & Ceiling
+
+\lfloor x\rfloor = \max\{n\in\mathbb{Z}: n\le x\},\qquad
+\lceil x\rceil = \min\{n\in\mathbb{Z}: n\ge x\}
+
+Floor maps a real number to the greatest integer less than or equal to it; ceiling to the least integer greater than or equal to it. These functions are ubiquitous in computer science for integer division, array indexing, and complexity analysis.
+
+Conjugate Prior (Bayesian Statistics)
+
+P(\theta \mid x) \propto P(x\mid\theta)\,P(\theta)
+
+A conjugate prior ensures that the posterior distribution belongs to the same family as the prior. Classic pairs include Beta–Binomial, Gamma–Poisson, and Normal–Normal. This property makes sequential Bayesian updating computationally tractable.
+
+Exponential Equation
+
+a^x = b \;\Longrightarrow\; x = \log_a b,\qquad a^{x+y} = a^x a^y
+
+The exponential function a^x is injective for a>0,\;a\neq 1. Exponential laws model population growth (k>0) and radioactive decay (k<0).
+
+---
+
+Geometry & Topology
+
+Pythagorean Theorem
+
+a^2 + b^2 = c^2
+
+The oldest evidence appears on the Babylonian tablet Plimpton 322 (c. 1800 BCE), which lists Pythagorean triples. Euclid’s Elements I.47 gives a classic geometric proof; over 370 distinct proofs are known today.
+
+Law of Cosines
+
+c^2 = a^2 + b^2 - 2ab\cos C
+
+Jamshīd al‑Kāshī (1427) provided the first explicit statement suitable for triangulation; in French the law is called Théorème d’Al‑Kashi. Setting C=90^\circ recovers the Pythagorean theorem. The law is fundamental to GPS trilateration.
+
+Heron’s Formula
+
+A = \sqrt{s(s-a)(s-b)(s-c)},\quad s = \frac{a+b+c}{2}
+
+Heron of Alexandria (c. 60 CE) gave this formula for the area of a triangle in terms of its side lengths. Qin Jiushao (1247) independently discovered it in China, and Brahmagupta later generalized it to cyclic quadrilaterals.
+
+Circle Area & Circumference
+
+A = \pi r^2,\qquad C = 2\pi r
+
+Archimedes (c. 250 BCE) used the method of exhaustion to bound the area. Zu Chongzhi (480 CE) computed \pi to seven decimal places. Lindemann (1882) proved that \pi is transcendental, settling the ancient problem of “squaring the circle.”
+
+Sphere Volume & Surface Area
+
+V = \frac{4}{3}\pi r^3,\qquad A = 4\pi r^2
+
+Archimedes discovered that a sphere has two‑thirds the volume of its circumscribing cylinder; he asked that this ratio be carved on his tombstone. Cicero later rediscovered the overgrown tomb in Sicily.
+
+Euler Characteristic (Polyhedra)
+
+V - E + F = 2
+
+Euler (1758) showed that for any convex polyhedron, vertices minus edges plus faces equals 2. For a surface of genus g, the formula generalizes to V - E + F = 2 - 2g. Poincaré (1895) extended it to the Euler characteristic \chi = \sum (-1)^i b_i.
+
+Ellipse Area & Perimeter
+
+A = \pi ab,\qquad C \approx \pi(a+b)\left(1 + \frac{3h}{10+\sqrt{4-3h}}\right)
+
+Apollonius (c. 200 BCE) wrote the foundational treatise Conics. Kepler (1609) found that planetary orbits are ellipses. The perimeter has no elementary closed form; Ramanujan (1914) gave the highly accurate approximation shown above.
+
+Great‑Circle Distance
+
+d = R\arccos\!\bigl(\sin\phi_1\sin\phi_2 + \cos\phi_1\cos\phi_2\cos(\Delta\lambda)\bigr)
+
+Hipparchus (c. 150 BCE) founded spherical trigonometry. The formula gives the shortest path between two points on a sphere. The haversine variant is numerically stable for modern GPS navigation.
+
+Gauss–Bonnet Theorem
+
+\int_M K\,dA = 2\pi\,\chi(M)
+
+Gauss’s Theorema Egregium (1827) showed that Gaussian curvature K is intrinsic to the surface. The theorem bridges local geometry (curvature) with global topology (Euler characteristic).
+
+Triangle Area (Base‑Height & Sine Form)
+
+A = \frac12 bh = \frac12 ab\sin C
+
+The fundamental area formula generalizes: base × height / 2, or half the product of two sides and the sine of the included angle.
+
+Parallelogram Area
+
+A = bh = |\mathbf{a}\times\mathbf{b}|
+
+Area equals base times height, which also equals the magnitude of the cross product of two adjacent side vectors.
+
+Trapezoid Area
+
+A = \frac{a+b}{2}h
+
+The average of the parallel sides times the height. Simpson’s rule for numerical integration reduces to this formula when n=1.
+
+Regular Polygon Area
+
+A = \frac14 n s^2 \cot(\pi/n)
+
+As n\to\infty, the area approaches \pi r^2.
+
+Circular Sector
+
+A = \frac12 r^2\theta,\qquad s = r\theta\quad (\theta\text{ in radians})
+
+Setting \theta=2\pi recovers the full circle area and circumference.
+
+Spherical Cap
+
+V = \frac{\pi h^2}{3}(3r-h),\qquad A = 2\pi rh
+
+For h=2r (the full sphere), the formulas reduce to the familiar V=4\pi r^3/3 and A=4\pi r^2.
+
+Cone Volume
+
+V = \frac13 \pi r^2 h
+
+The volume of a right circular cone is exactly one‑third that of the circumscribing cylinder. Democritus (c. 400 BCE) first stated this fact; Eudoxus gave a rigorous proof.
+
+Cylinder Volume
+
+V = \pi r^2 h
+
+Base area times height; lateral surface area is 2\pi rh. It is the archetypal example of Cavalieri’s principle.
+
+Tetrahedron Volume
+
+V = \frac16 |(\mathbf{a}\times\mathbf{b})\cdot\mathbf{c}|
+
+The volume is one‑sixth of the scalar triple product of three edge vectors emanating from a vertex.
+
+Distance from Point to Plane
+
+d = \frac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}
+
+The numerator is the absolute value of the plane equation evaluated at the point; the denominator is the magnitude of the normal vector.
+
+Angle Between Vectors
+
+\cos\theta = \frac{\mathbf{a}\cdot\mathbf{b}}{\|\mathbf{a}\|\|\mathbf{b}\|}
+
+\theta=0^\circ when parallel, 90^\circ when perpendicular, 180^\circ when antiparallel.
+
+Vector Reflection Formula
+
+\mathbf{r} = \mathbf{d} - 2(\mathbf{d}\cdot\mathbf{n})\mathbf{n}
+
+Reflects a direction vector \mathbf{d} across a surface with unit normal \mathbf{n}. Fundamental to ray tracing, optics (law of reflection), and billiard dynamics.
+
+Polyhedron Volume (Divergence‑Theorem Form)
+
+V = \frac13 \sum_{\text{faces}} (\mathbf{c}_f\cdot\mathbf{n}_f)A_f
+
+Volume can be computed via the divergence theorem as one‑third of the sum over faces of (centroid · normal) × area.
+
+Curvature of a Space Curve
+
+\kappa = \frac{|\mathbf{r}'\times\mathbf{r}''|}{|\mathbf{r}'|^3}
+
+For a circle of radius R, \kappa = 1/R. The osculating circle (best‑fitting circle) has radius 1/\kappa.
+
+Torsion of a Space Curve
+
+\tau = \frac{(\mathbf{r}'\times\mathbf{r}'')\cdot\mathbf{r}'''}{|\mathbf{r}'\times\mathbf{r}''|^2}
+
+Torsion measures how sharply a curve twists out of its osculating plane. A planar curve has \tau=0. Together with curvature \kappa, the Frenet‑Serret frame is fully specified.
+
+Surface Area of Revolution
+
+A = 2\pi\int_a^b f(x)\sqrt{1+[f'(x)]^2}\,dx
+
+Area generated by rotating y=f(x) about the x-axis, derived from the frustum lateral area element dA = 2\pi y\,ds.
+
+Volume of Revolution (Disk Method)
+
+V = \pi\int_a^b [f(x)]^2\,dx
+
+Volume generated by rotating y=f(x) about the x-axis. For rotation about the y-axis, cylindrical shells yield V = 2\pi\int x f(x)\,dx.
+
+Spherical Coordinates
+
+\begin{aligned}
+x &= r\sin\phi\cos\theta,\\
+y &= r\sin\phi\sin\theta,\\
+z &= r\cos\phi,\\
+dV &= r^2\sin\phi\,dr\,d\phi\,d\theta
+\end{aligned}
+
+The Jacobian r^2\sin\phi is the local volume scale factor. These coordinates are ideal for integrating over spheres and for central‑potential problems in quantum mechanics.
+
+Cylindrical Coordinates
+
+x = r\cos\theta,\quad y = r\sin\theta,\quad z = z,\quad dV = r\,dr\,d\theta\,dz
+
+Jacobian = r. Used for problems with axial symmetry: fluid flow in pipes, magnetic fields around wires.
+
+Shoelace Formula
+
+A = \frac12\left|\sum_{i=1}^n (x_i y_{i+1} - x_{i+1}y_i)\right|
+
+Gives the area of a simple polygon from its vertex coordinates, in O(n) time. The name comes from the criss‑cross pattern reminiscent of lacing a shoe.
+
+---
+
+Trigonometry & Hyperbolics
+
+Pythagorean Identity
+
+\sin^2\theta + \cos^2\theta = 1
+
+On the unit circle, the coordinates (\cos\theta,\sin\theta) satisfy x^2+y^2=1, so this identity is nothing but the Pythagorean theorem in trigonometric form. All other trig identities ultimately derive from this one.
+
+Sine & Cosine Sum Formulas
+
+\sin(A\pm B) = \sin A\cos B \pm \cos A\sin B
+
+Ptolemy (c. 150 CE) used these in the Almagest to construct trigonometric tables. They enabled all pre‑calculator navigation and astronomy.
+
+Hyperbolic Functions
+
+\sinh x = \frac{e^x - e^{-x}}{2},\qquad
+\cosh^2 x - \sinh^2 x = 1
+
+Introduced by Riccati (1757), these functions parametrize the hyperbola x^2-y^2=1. They appear in Lorentz boosts of special relativity, the catenary curve, and complex analysis.
+
+Law of Sines
+
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
+
+Al‑Battani (c. 900 CE) used this for astronomical calculations; Al‑Tusi (1250) refined it at the Maragheh observatory. Here R is the circumradius.
+
+Double‑Angle Formulas
+
+\sin 2\theta = 2\sin\theta\cos\theta,\qquad
+\cos 2\theta = \cos^2\theta - \sin^2\theta
+
+Direct consequences of the sum formulas with A=B=\theta. Equivalent forms \cos2\theta = 2\cos^2\theta-1 = 1-2\sin^2\theta are used for power reduction.
+
+Half‑Angle Formulas
+
+\sin\frac{\theta}{2} = \sqrt{\frac{1-\cos\theta}{2}},\qquad
+\cos\frac{\theta}{2} = \sqrt{\frac{1+\cos\theta}{2}}
+
+Derived from \cos2\alpha = 1-2\sin^2\alpha with \alpha=\theta/2. Essential for the Weierstrass (tangent half‑angle) substitution in rational trig integrals.
+
+Product‑to‑Sum Formula
+
+\sin A\cos B = \frac12\bigl[\sin(A+B) + \sin(A-B)\bigr]
+
+Known historically as prosthaphaeresis (Greek: “addition and subtraction”), this was used by astronomers like Tycho Brahe to multiply large numbers before logarithms were available.
+
+Sum‑to‑Product Formula
+
+\sin A + \sin B = 2\sin\frac{A+B}{2}\cos\frac{A-B}{2}
+
+Used to solve trigonometric equations (e.g., \sin 3x + \sin x = 0) and in beat‑frequency analysis.
+
+Inverse Trig Derivatives
+
+\frac{d}{dx}\arcsin x = \frac{1}{\sqrt{1-x^2}},\qquad
+\frac{d}{dx}\arctan x = \frac{1}{1+x^2}
+
+These yield the standard integration formulas \int dx/\sqrt{1-x^2} = \arcsin x + C and \int dx/(1+x^2) = \arctan x + C.
+
+Trigonometric Equations
+
+\sin x = \sin\alpha \;\Longrightarrow\; x = n\pi + (-1)^n\alpha
+
+
+
+\cos x = \cos\alpha \;\Longrightarrow\; x = 2n\pi \pm \alpha,\qquad
+\tan x = \tan\alpha \;\Longrightarrow\; x = n\pi + \alpha
+
+General solutions exploit periodicity and symmetry.
+
+Secant, Cosecant, Cotangent
+
+\sec x = \frac{1}{\cos x},\quad \csc x = \frac{1}{\sin x},\quad \cot x = \frac{\cos x}{\sin x}
+
+Derivatives: \frac{d}{dx}\sec x = \sec x\tan x, \frac{d}{dx}\csc x = -\csc x\cot x. A classic integral: \int \sec x\,dx = \ln|\sec x + \tan x| + C.
+
+Small‑Angle Approximations
+
+\sin x \approx x,\qquad \cos x \approx 1 - \frac{x^2}{2},\qquad \tan x \approx x
+
+These are the first‑order Taylor expansions for |x|\ll 1 (in radians). They are used in the simple pendulum formula T \approx 2\pi\sqrt{L/g}.
+
+Phase‑Shift Representation
+
+A\sin(\omega t + \phi) = A\cos\phi\sin\omega t + A\sin\phi\cos\omega t
+
+Any sinusoidal signal can be decomposed into sine and cosine components. In AC circuits, this splits voltage into resistive (cos) and reactive (sin) parts.
+
+Spherical Law of Cosines
+
+\cos c = \cos a\cos b + \sin a\sin b\cos C
+
+For a spherical triangle on a unit sphere. It reduces to the planar law of cosines for small triangles and is essential for celestial navigation.
+
+---
+
+Single‑Variable Calculus
+
+Definition of the Derivative
+
+f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+
+Newton (1666) and Leibniz (1684) independently invented calculus; Cauchy (1821) and Weierstrass (1861) later placed the concept on a rigorous \varepsilon-\delta foundation.
+
+Fundamental Theorem of Calculus (FTC)
+
+\frac{d}{dx}\int_a^x f(t)\,dt = f(x),\qquad
+\int_a^b f(x)\,dx = F(b)-F(a)\quad (F' = f)
+
+Differentiation and integration are inverse operations. James Gregory (1668) and Isaac Barrow (1670, Newton’s teacher) had geometric versions; Newton and Leibniz gave the calculus form we use today.
+
+Gaussian Integral
+
+\int_{-\infty}^\infty e^{-x^2}\,dx = \sqrt{\pi}
+
+First evaluated by de Moivre (1733) in a probability context; Gauss (1809) used it for the normal distribution. The classic proof squares the integral and converts to polar coordinates.
+
+Taylor Series
+
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n
+
+Published by Brook Taylor in 1715. Lagrange (1797) provided an explicit remainder form. Abel (1826) gave a counterexample of a smooth function whose Taylor series converges to the wrong value, showing that smoothness does not imply analyticity.
+
+Gamma Function
+
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}\,dt,\qquad \Gamma(1/2)=\sqrt{\pi}
+
+Euler (1729–30, at age 22) generalized the factorial to complex numbers: \Gamma(n+1)=n!. The related Beta function B(x,y)=\Gamma(x)\Gamma(y)/\Gamma(x+y) is fundamental to Bayesian statistics.
+
+Dirichlet (Sinc) Integral
+
+\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}
+
+Dirichlet (1829) showed this integral equals \pi/2 regardless of frequency. In signal processing, it is the impulse response of the ideal low‑pass filter.
+
+Stirling’s Approximation
+
+n! \sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n
+
+de Moivre (1730) found the n^n e^{-n} part; Stirling (1730) added the \sqrt{2\pi n} factor. For n=10, the approximation is within 1% of the exact value. The log form \ln n! \approx n\ln n - n is the basis of entropy in statistical mechanics.
+
+Product Rule
+
+(fg)' = f'g + fg'
+
+Leibniz (1684) gave this rule. The generalized Leibniz rule for the n-th derivative is (fg)^{(n)} = \sum \binom{n}{k} f^{(n-k)}g^{(k)}.
+
+Quotient Rule
+
+\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}
+
+Follows from the product rule and chain rule.
+
+Chain Rule
+
+\frac{d}{dx}f(g(x)) = f'(g(x))\,g'(x)
+
+In Leibniz notation: \frac{dy}{dx} = \frac{dy}{du}\cdot\frac{du}{dx}. This is the most frequently used differentiation rule.
+
+Implicit Differentiation
+
+\frac{d}{dx}F(x,y)=0 \;\Longrightarrow\; \frac{dy}{dx} = -\frac{\partial_x F}{\partial_y F}
+
+When y is implicitly defined by F(x,y)=0, differentiate both sides with respect to x and solve for dy/dx. Example: x^2+y^2=1 gives dy/dx = -x/y.
+
+Mean Value Theorem
+
+f'(c) = \frac{f(b)-f(a)}{b-a},\quad c\in(a,b)
+
+Lagrange (1797) stated that there exists a point where the tangent is parallel to the secant. The special case f(a)=f(b) is Rolle’s theorem.
+
+Intermediate Value Theorem
+
+f \text{ continuous on }[a,b] \;\Longrightarrow\; \forall\,y\in[f(a),f(b)]\; \exists\,c: f(c)=y
+
+Bolzano (1817) proved that a continuous function attains every value between its endpoints.
+
+Extreme Value Theorem
+
+f \text{ continuous on }[a,b] \;\Longrightarrow\; \exists\max f,\; \exists\min f
+
+A continuous function on a closed, bounded interval attains its maximum and minimum. Optimization then reduces to checking critical points (f'=0 or undefined) and endpoints.
+
+Concavity Test
+
+f''(x) > 0 \Rightarrow \text{concave up},\qquad f''(x) < 0 \Rightarrow \text{concave down}
+
+An inflection point occurs where f'' changes sign; f''(x)=0 is necessary but not sufficient (e.g., f(x)=x^4 at x=0).
+
+L’Hôpital’s Rule
+
+\lim\frac{f}{g} = \lim\frac{f'}{g'}\quad (0/0 \text{ or } \infty/\infty)
+
+Discovered by Johann Bernoulli (1694) but published by L’Hôpital. Care must be taken to avoid circular reasoning when applying the rule.
+
+u-Substitution
+
+\int f(g(x))\,g'(x)\,dx = \int f(u)\,du,\quad u=g(x)
+
+The inverse of the chain rule for integration. It is the most fundamental integration technique.
+
+Trigonometric Substitution
+
+x = a\sin\theta,\; a\tan\theta,\; a\sec\theta\quad\text{for}\quad \sqrt{a^2-x^2},\; \sqrt{a^2+x^2},\; \sqrt{x^2-a^2}
+
+The Pythagorean identity transforms the square‑root into an algebraic expression.
+
+Partial Fractions Integration
+
+\int\frac{P(x)}{Q(x)}dx = \sum\int\frac{A}{(x-r)^k}dx
+
+Decompose a rational function and integrate term by term.
+
+Improper Integrals
+
+\int_a^\infty f(x)\,dx = \lim_{b\to\infty}\int_a^b f(x)\,dx
+
+Convergence criteria: \int_1^\infty 1/x^p\,dx converges iff p>1; \int_0^1 1/x^p\,dx converges iff p<1.
+
+Arc Length
+
+L = \int_a^b \sqrt{1+[f'(x)]^2}\,dx = \int_a^b |\mathbf{r}'(t)|\,dt
+
+Length is obtained by integrating speed along the curve.
+
+Surface of Revolution Area
+
+A = 2\pi\int_a^b f(x)\sqrt{1+[f'(x)]^2}\,dx
+
+Rotating a curve about the x-axis: circumference at each x times the differential arc length.
+
+Work Integral
+
+W = \int_a^b F(x)\,dx = \int_C \mathbf{F}\cdot d\mathbf{r}
+
+Work is the integral of force along a path. For conservative forces, work equals the change in potential, and the integral is path‑independent if \nabla\times\mathbf{F}=0.
+
+Center of Mass
+
+\bar{x} = \frac{\int x\,dm}{\int dm}
+
+For uniform density, this reduces to \int x\,dA / \int dA for planar regions and \int x\,dV / \int dV for solids.
+
+Moment of Inertia
+
+I = \int r^2\,dm
+
+Rotational inertia resists angular acceleration. The parallel‑axis theorem states I = I_{\text{cm}} + Md^2.
+
+Differential Equation y' = ky
+
+\frac{dy}{dt} = ky \;\Longrightarrow\; y(t) = y_0 e^{kt}
+
+k>0 gives exponential growth (population, compound interest); k<0 gives exponential decay (radioactivity, cooling). The half‑life for decay is t_{1/2} = \ln 2/|k|.
+
+Logistic Equation
+
+\frac{dP}{dt} = rP\left(1-\frac{P}{K}\right),\qquad
+P(t) = \frac{K}{1+Ce^{-rt}}
+
+Verhulst (1838) introduced this S‑shaped growth model with carrying capacity K. It describes population dynamics, technology adoption, and epidemiology.
+
+---
+
+Multivariable & Vector Calculus
+
+Gradient
+
+\nabla f = (\partial_x f,\; \partial_y f,\; \partial_z f)
+
+Hamilton (1837) introduced the symbol \nabla (“nabla”). The gradient points in the direction of steepest ascent; gradient descent \theta \leftarrow \theta - \eta\nabla_\theta L is the engine behind modern neural‑network training.
+
+Divergence
+
+\nabla\cdot\mathbf{F} = \partial_x F_x + \partial_y F_y + \partial_z F_z
+
+Divergence measures the source strength of a vector field: \nabla\cdot\mathbf{F}>0 indicates a source, <0 a sink. Maxwell’s equation: \nabla\cdot\mathbf{E} = \rho/\varepsilon_0.
+
+Curl
+
+\nabla\times\mathbf{F} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+\partial_x & \partial_y & \partial_z \\
+F_x & F_y & F_z
+\end{vmatrix}
+
+Curl measures the local rotation (vorticity) of a vector field. Key identities: \nabla\times(\nabla f)=0, \nabla\cdot(\nabla\times\mathbf{F})=0. Faraday’s law: \nabla\times\mathbf{E} = -\partial\mathbf{B}/\partial t.
+
+Divergence Theorem (Gauss–Ostrogradsky)
+
+\iint_{\partial V}\mathbf{F}\cdot d\mathbf{S} = \iiint_V (\nabla\cdot\mathbf{F})\,dV
+
+Gauss (1813) and Ostrogradsky (1826) established this result independently. It equates the flux through a closed surface to the volume integral of the divergence.
+
+Stokes’ Theorem
+
+\oint_{\partial S}\mathbf{F}\cdot d\mathbf{r} = \iint_S (\nabla\times\mathbf{F})\cdot d\mathbf{S}
+
+The circulation around a closed loop equals the flux of the curl through the surface bounded by that loop. It proves that curl‑free fields are path‑independent.
+
+Green’s Theorem
+
+\oint_{\partial D}(L\,dx + M\,dy) = \iint_D (\partial_x M - \partial_y L)\,dx\,dy
+
+George Green (1828) self‑published this result; he was a miller’s son who founded potential theory. Green’s functions are fundamental solutions of linear PDEs throughout physics.
+
+Laplace’s Equation
+
+\nabla^2 f = \partial_x^2 f + \partial_y^2 f + \partial_z^2 f = 0
+
+Solutions (\nabla^2 f=0) are called harmonic functions. They describe steady‑state heat flow, electrostatic potential in charge‑free regions, and incompressible fluid potential. The maximum principle states that extrema occur on the boundary.
+
+Jacobian Determinant
+
+J = \det\!\left(\frac{\partial f_i}{\partial x_j}\right)
+
+The absolute value of the Jacobian is the local volume‑scaling factor. In polar coordinates, dx\,dy = r\,dr\,d\theta (J=r); in spherical coordinates, dx\,dy\,dz = r^2\sin\phi\,dr\,d\theta\,d\phi. The Inverse Function Theorem: J\neq 0 implies local invertibility.
+
+---
+
+Real Analysis & Measure Theory
+
+Bolzano–Weierstrass Theorem
+
+Every bounded sequence in \mathbb{R}^n has a convergent subsequence.
+
+Heine–Borel Theorem
+
+A subset of \mathbb{R}^n is compact iff it is closed and bounded.
+
+Cantor Set
+
+C = [0,1]\setminus\bigcup_n\bigcup_k (\text{removed middle thirds})
+
+
+The Cantor set is uncountable, has Lebesgue measure zero, and is nowhere dense.
+
+Monotone Convergence Theorem
+
+If f_n \uparrow f pointwise and f_n\ge 0, then \int f_n \to \int f.
+
+Fatou’s Lemma
+
+\int\liminf f_n \le \liminf\int f_n
+
+A cornerstone of Lebesgue integration theory.
+
+Dominated Convergence Theorem
+
+If f_n\to f pointwise and |f_n|\le g with g\in L^1, then \int f_n \to \int f.
+
+Tonelli / Fubini Theorems
+
+For non‑negative or absolutely integrable functions, the double integral equals the iterated integral in either order: \iint f(x,y)\,dx\,dy = \int\!\int f\,dx\,dy.
+
+Hölder Inequality
+
+\int|fg| \le \|f\|_p\,\|g\|_q,\qquad \frac{1}{p}+\frac{1}{q}=1
+
+Generalizes Cauchy–Schwarz (p=q=2).
+
+Minkowski Inequality
+
+\|f+g\|_p \le \|f\|_p + \|g\|_p
+
+This is the triangle inequality in L^p spaces.
+
+L^p Spaces
+
+L^p = \{f : \int|f|^p < \infty\},\qquad \|f\|_p = \left(\int|f|^p\right)^{1/p}
+
+Banach spaces are complete normed vector spaces (L^p spaces are Banach).
+
+Hilbert Space
+
+A complete inner‑product space. L^2 is the prototypical Hilbert space. The Riesz representation theorem states that every bounded linear functional on a Hilbert space is given by an inner product.
+
+Baire Category Theorem
+
+A complete metric space cannot be expressed as a countable union of nowhere‑dense sets.
+
+Uniform Continuity
+
+\forall\varepsilon>0\;\exists\delta>0:\; |x-y|<\delta \Rightarrow |f(x)-f(y)|<\varepsilon \text{ for ALL } x,y
+
+Stronger than pointwise continuity; the same \delta works for every pair of points.
+
+Weierstrass M‑Test
+
+If |f_n(x)|\le M_n and \sum M_n<\infty, then \sum f_n converges uniformly.
+
+Lebesgue Integration
+
+The compendium presents an integral \mathbb{E}[L] = \sum_{k=0}^\infty \frac{\lambda^k e^{-\lambda}}{k!} f(k) as an illustration of Lebesgue integration ideas.
+
+Measure Spaces
+
+The fundamental framework for modern probability and real analysis.
+
+Convergence Theorems / Borel Sets / Radon–Nikodym Theorem
+
+Further advanced topics are listed with summary descriptions, highlighting their roles in measure theory, functional analysis, and connections to modern machine learning and quantum information.【9†L373-L10†L429】
+
+---
+
+This exhaustive catalogue captures every formula presented on the Science Creator site, together with its mathematical meaning, historical context, and the interdisciplinary connections that make the compendium a unified “Universal Compendium of Mathematics · Physics · Computer Science.”
